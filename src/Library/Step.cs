@@ -4,6 +4,10 @@
 // </copyright>
 //-------------------------------------------------------------------------------
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Full_GRASP_And_SOLID
 {
     public class Step
@@ -38,5 +42,7 @@ namespace Full_GRASP_And_SOLID
             return $"{this.Quantity} de '{this.Input.Description}' " +
                 $"usando '{this.Equipment.Description}' durante {this.Time}";
         }
+
+        
     }
 }
