@@ -14,10 +14,17 @@ namespace Full_GRASP_And_SOLID
         private IList<Step> steps = new List<Step>();
 
         public Product FinalProduct { get; set; }
-
+        /*
         public void AddStep(Step step)
         {
             this.steps.Add(step);
+        } */
+
+        public Step AddStep(Product product, double quantity, Equipment equipment, int time)
+        {
+            Step paso = new Step(product, quantity,equipment, time);
+            this.steps.Add(paso);
+            return paso;
         }
 
         public void RemoveStep(Step step)
