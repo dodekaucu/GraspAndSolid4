@@ -20,6 +20,10 @@ namespace Full_GRASP_And_SOLID
             this.steps.Add(step);
         } */
 
+
+        /*  JUSTIFICACIÓN:
+        Se utiliza el patron creator, las instancias de step (anteriormente inicializadas en program)
+        pasan a ser inicializadas en Recipe, pues la clase recipe agrega instancias de step.*/
         public Step AddStep(Product product, double quantity, Equipment equipment, int time)
         {
             Step paso = new Step(product, quantity,equipment, time);
